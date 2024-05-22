@@ -1,0 +1,10 @@
+.burger{
+    width: 24px;
+    height: 24px;
+}
+
+.burger_btn{
+    background: transparent;
+    border: none;
+    outline: none;
+}
