@@ -1,11 +1,26 @@
+import Cards from "@/widgets/depositCard/ui/Depositcard";
 import styles from "./page.module.css";
 import DepositHeader from "@/widgets/depositHeader/ui/Depositheader";
+import { IDeposite, IDepositeAtributes } from "@/widgets/depositCard";
 
-export default function Home() {
+export default async function Home() {
+  const response = await fetch('http://192.168.100.59:1337/api/deposits?populate=*')
+  const data = await response.json()
+
+
   return (
-    <div className={styles.deposit_container}>
+    <>
+      <div className={styles.deposit_container}>
         <DepositHeader/>
-    </div>
+      </div>
+      <div className={styles.cards_container}>
+        {data.data.map((attributes: IDeposite)=>
+            <Cards data={attributes}/>
+        )}
+        
+      </div>
+    </>
+    
   
 
   );

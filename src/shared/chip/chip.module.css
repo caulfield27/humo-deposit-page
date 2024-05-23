@@ -1,0 +1,33 @@
+.chip{
+    width: fit-content;
+    height: 40px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F5F5;
+    color: black;
+    cursor: pointer;
+
+}
+
+.chip:hover{
+    border:1px solid #F76835;
+    padding: 11.5px 19.5px;
+}
+
+
+
+.active{
+    background: #171717;
+    color: white;
+    border: 1px solid  #F76835;
+    transition: all 0.4s linear;
+    padding: 11.5px 19.5px;
+
+    
+}

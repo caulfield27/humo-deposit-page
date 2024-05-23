@@ -1,0 +1,55 @@
+.card{
+    max-width: 980px;
+    height: 340px;
+    border-radius: 32px;
+    box-shadow: 0px 3px 12px 0px #00000014; 
+    display: flex;
+    flex-direction:row; 
+
+}
+
+.card_right_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deposit_img{
+    max-width: 414px;
+    height: 340px;
+}
+
+.card_left_wrap{
+    padding: 40px 0px 40px 40px;
+}
+
+.deposit_info{
+    max-width: 526px;
+}
+
+
+@media screen and (max-width: 980px) {
+    .card{
+        flex-direction:column-reverse;
+        height: fit-content;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .card_left_wrap{
+        width: 100%;
+        padding: 20px 16px 20px 16px;
+    }   
+    
+}
+
+@media screen and (max-width: 540px) {
+    .deposit_img{
+        width: 304px;
+        height: 200px;
+
+    }
+    
+}
+

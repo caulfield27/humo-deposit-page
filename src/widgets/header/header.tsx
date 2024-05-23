@@ -1,9 +1,9 @@
-import Logo from "@/shared/ui/logo/logo";
+import Logo from "@/shared/logo/logo";
 import styles from './header.module.css'
 import NavBar from "@/entities/NavBar/ui/navBar";
-import Language from "@/shared/ui/language/language";
+import Language from "@/shared/language/language";
 import HeaderTabs from "@/entities/tabs/ui/tabs";
-import Burger from "@/shared/ui/burgerButton/burger";
+import Burger from "@/shared/burgerButton/burger";
 
 const Header = () => {
     return (

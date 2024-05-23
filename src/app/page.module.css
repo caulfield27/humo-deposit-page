@@ -1,4 +1,7 @@
 .deposit_container{
-    width: 100%;
     height: 168px;
+}
+
+.cards_container{
+    margin-bottom: 36px;
 }

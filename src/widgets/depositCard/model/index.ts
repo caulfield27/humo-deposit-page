@@ -51,7 +51,7 @@ interface IDepositeAtributes{
     updatedAt: string,
     publishedAt: string,
     img:IImgData[],
-    conditions: IConditions
+    conditions: IConditions[]
 }
 
 interface IDeposite{

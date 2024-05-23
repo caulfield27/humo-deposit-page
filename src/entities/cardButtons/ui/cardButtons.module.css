@@ -1,0 +1,16 @@
+.buttons_wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+
+@media screen and (max-width: 540px){
+    .buttons_wrap{
+        flex-direction: column;
+        gap: 12px;
+        justify-content:center;
+        align-items: center;
+    }
+    
+}
