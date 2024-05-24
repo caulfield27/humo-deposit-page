@@ -19,7 +19,7 @@ export default function Cards({data} : {data : IDeposite}) {
       </div>
       <div className={styles.card_right_wrap}>
         <img className={styles.deposit_img}
-          src="http://192.168.100.59:1337/uploads/thumbnail_Screens_Listy_1_8abff92c69.png" 
+          src="/procent.png" 
           alt="deposit procent" />
       </div>
     </div>

@@ -25,21 +25,6 @@ const DepositInfo:FunctionComponent<Props> = ({title, description, conditions}) 
                         <h3 className={styles.header_span}>{condition.title}</h3>
                     </li>
                 )}
-                {/* <li className={styles.info_list}>
-                    <p className={styles.p_span}>годовая ставка</p>
-                    <h3 className={styles.header_span}>До 16%</h3>
-
-                </li>
-                <li className={styles.info_list}>
-                    <p className={styles.p_span}>минимальная сумма</p>
-                    <h3 className={styles.header_span}>От 10 с</h3>
-
-                </li>
-                <li className={styles.info_list}>
-                    <p className={styles.p_span}>срок депозита</p>
-                    <h3 className={styles.header_span}>2 года</h3>
-
-                </li> */}
             </ul>
         </>
 

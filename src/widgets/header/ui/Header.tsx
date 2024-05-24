@@ -1,8 +1,8 @@
 import Logo from "@/shared/logo/logo";
 import styles from './header.module.css'
-import NavBar from "@/entities/NavBar/ui/navBar";
+import { NavBar } from "@/entities/NavBar";
 import Language from "@/shared/language/language";
-import HeaderTabs from "@/entities/tabs/ui/tabs";
+import HeaderTabs from "@/entities/Tabs/ui/Tabs";
 import Burger from "@/shared/burgerButton/burger";
 
 const Header = () => {

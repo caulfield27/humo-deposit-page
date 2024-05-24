@@ -12,6 +12,7 @@
     background: #F5F5F5;
     color: black;
     cursor: pointer;
+    white-space: nowrap;
 
 }
 

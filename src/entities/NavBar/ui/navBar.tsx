@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { navLInks } from "../model/links"
+import { navLInks } from "../model/navLinks"
 import styles from './navBar.module.css'
 
 const NavBar = ()=>{
