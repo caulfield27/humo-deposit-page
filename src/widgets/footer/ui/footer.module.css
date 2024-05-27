@@ -1,9 +1,7 @@
 .footer_container{
-    margin-top: auto;
     padding-top: 64px;
     padding-bottom: 64px;
-    width: 100%;
-    height: 392px;
+    max-width: 100%;
     background: #F5F5F5;
 }
 
@@ -12,14 +10,18 @@
     margin:auto;
     display: flex;
     flex-direction: column;
-    gap: 32px;
 }
 
 .top_block{
     display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.reverse{
+    display: flex;
     flex-direction: row;
     gap: 64px;
-    max-height: 128px;
 }
 
 .apps_container{
@@ -35,6 +37,15 @@
     line-height: 24px;
     text-align: left;
     color:#737373;
+}
+
+.media_span{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color:#737373;
+
 }
 
 .app_links{
@@ -93,9 +104,15 @@
     gap: 12px;
 }
 
-.in_hr{
+.hr_global{
     border: none;
     border-bottom: 1px solid var(--bg-role-accent, #F76835)
+}
+
+.hr_locale{
+    max-width: 165px;
+    border: none;
+    border-bottom: 1px solid var(--bg-role-accent, #F76835)   
 }
 
 .footer_text{
@@ -145,10 +162,21 @@
 @media screen and (max-width: 980px) {
     .footer_content{
         max-width: 768px;
-        display: grid;
-        
+    }
+    .reverse{
+        gap: 30px;
     }   
-
+    .apps_container{
+        max-width: 150px;
+    }
+    .footer_links{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+    .footer_container{
+        height: 586px;
+    }
     
 }
 
@@ -156,10 +184,43 @@
     .footer_content{
         max-width: 670px;
     }
+    .contacts_container{
+        flex-direction: column;   
+    }
 }
 @media screen and (max-width: 670px) {
     .footer_content{
         max-width: 540px;   
+    }
+    .reverse{
+        flex-direction: column-reverse;
+        gap: 26px;
+    }
+    .footer_hr{
+        display: none;
+    }
+    .footer_container{
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .top_block{
+        gap: 16px;
+    }
+    .apps_container{
+        max-width: 328px;
+    }
+    .app_span{
+        display: none;
+    }
+    .footer_links{
+        margin-bottom: 0;
+        gap: 0;
+        column-gap: 15px;   
+    }
+    .license_wrap{
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 25px;
     }
 }
 
