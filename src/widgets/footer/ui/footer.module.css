@@ -1,0 +1,170 @@
+.footer_container{
+    margin-top: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    width: 100%;
+    height: 392px;
+    background: #F5F5F5;
+}
+
+.footer_content{
+    max-width: 980px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.top_block{
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    max-height: 128px;
+}
+
+.apps_container{
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.app_span{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color:#737373;
+}
+
+.app_links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.apps_button{
+    width:124px;
+    height:40px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.media_container{
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.media_links{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.contacts_container{
+    max-width: 372px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.number{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+}
+
+.number_wrap{
+    max-width: 29px;
+}
+
+.in{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.in_hr{
+    border: none;
+    border-bottom: 1px solid var(--bg-role-accent, #F76835)
+}
+
+.footer_text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #737373;
+}
+
+.footer_links{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.link_item{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #171717;
+}
+
+.footer_hr{
+    border: 1px solid #E6E6E6;
+}
+
+.license_wrap{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.license_link{
+    text-decoration: none;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #737373;
+
+}
+
+@media screen and (max-width: 980px) {
+    .footer_content{
+        max-width: 768px;
+        display: grid;
+        
+    }   
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    .footer_content{
+        max-width: 670px;
+    }
+}
+@media screen and (max-width: 670px) {
+    .footer_content{
+        max-width: 540px;   
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .footer_content{
+        padding:0px 10px 0px 10px;
+    }
+}

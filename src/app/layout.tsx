@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {Golos_Text} from "next/font/google"
 import  "./globals.css";
 import { Header } from "@/widgets/header";
+import { Footer } from "@/widgets/footer";
 
 const golos = Golos_Text({ subsets: ["latin"],weight:["400", "500","600","700"]});
 
@@ -22,6 +23,7 @@ export default function RootLayout({
           <Header/>
           {children}
         </div>
+        <Footer/>
       </body>
     </html>
   );
