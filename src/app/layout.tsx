@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import {Golos_Text} from "next/font/google"
-import  "./globals.css";
+import "./globals.css";
 import { Header } from "@/widgets/header";
-import { Footer } from "@/widgets/footer";
-
-const golos = Golos_Text({ subsets: ["latin"],weight:["400", "500","600","700"]});
+import MyFooter from "@/widgets/footer/ui/Footer";
 
 export const metadata: Metadata = {
   title: "Humo Deposit page",
@@ -18,12 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={golos.className}>
+      <body>
         <div className='wrapper'>
-          <Header/>
+          <Header />
           {children}
         </div>
-        <Footer/>
+        <MyFooter/>
       </body>
     </html>
   );

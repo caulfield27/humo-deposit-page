@@ -1,14 +1,19 @@
+'use client'
 import styles from './tabs.module.css'
 import { tabLinks } from '../model/tabLinks'
 import Link from "next/link"
+import { Tabs } from 'humo-ui'
+import { useState } from 'react'
 
 const HeaderTabs = ()=>{
+    const [tabValue, setTabValue] = useState<string | number>(4);
     return (
-       <div className={styles.tabs_wrap}>
-            {tabLinks.map((link)=>
-                <Link className={styles.tabs_item} href={link.path} key={link.label}>{link.label}</Link>
+    <Tabs defaultValue={tabValue} setValue={(value)=> setTabValue(value)} className=''>
+        {tabLinks.map((link)=>
+                <Tabs.Item value={link.value} key={link.value}>{link.label}</Tabs.Item>
             )}
-       </div>
+
+    </Tabs>
         
     )
 }

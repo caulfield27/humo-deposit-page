@@ -1,26 +1,16 @@
 "use client"
 import { useState } from 'react';
 import styles from './depositChips.module.css'
-import Chip from '@/shared/chip/chip' 
+import { Chip, Chips } from 'humo-ui';
+
 
 const DepositChips = ()=>{
-    const [isActive, setIsActive] = useState<string>('Все');
-    const handleChipClick = (label: string) => {
-        setIsActive(label);
-    };
+    const [value, setValue] = useState<string[]>(['Все']);
     return (
-        <div className={styles.chips_wrap}>
-             <Chip 
-                label='Все' 
-                isActive={isActive === 'Все'} 
-                onClick={() => handleChipClick('Все')}
-            />
-            <Chip 
-                label='Бессрочные' 
-                isActive={isActive === 'Бессрочные'} 
-                onClick={() => handleChipClick('Бессрочные')}
-            />
-        </div>
+        <Chips  value={value} setValue={(value)=> setValue(value)}>
+            <Chip value='Все'>Все</Chip>
+            <Chip value='Бессрочные'>Бессрочные</Chip>
+        </Chips>
     )
 
 }
