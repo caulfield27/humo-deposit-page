@@ -1,7 +1,6 @@
 'use client'
 import styles from './tabs.module.css'
 import { tabLinks } from '../model/tabLinks'
-import Link from "next/link"
 import { Tabs } from 'humo-ui'
 import { useState } from 'react'
 

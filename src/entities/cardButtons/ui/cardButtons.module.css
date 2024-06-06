@@ -7,10 +7,10 @@
   
 }
 
-.button_wrap_1{
+.primary_btn{
     width: 172px;
 }
-.button_wrap_2{
+.transparent_btn{
     width:129px;
 }
 
@@ -22,10 +22,10 @@
         justify-content:center;
         align-items: center;
     }
-    .button_wrap_1{
+    .primary_btn{
         width: 100%;
     }
-    .button_wrap_2{
+    .transparent_btn{
         width: 100%;
     }
     
