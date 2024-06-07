@@ -33,9 +33,13 @@ interface IImgDataAttributes{
 
 }
 
-interface IImgData{
+interface IDataImgProps{
     id:number,
-    attributes:IImgDataAttributes,
+    attributes:IImgDataAttributes
+}
+
+interface IImgData{
+    data:IDataImgProps[]
 }
 
 interface IConditions{
@@ -50,7 +54,7 @@ interface IDepositeAtributes{
     createdAt: string,
     updatedAt: string,
     publishedAt: string,
-    img:IImgData[],
+    img:IImgData,
     conditions: IConditions[]
 }
 
